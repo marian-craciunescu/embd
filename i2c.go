@@ -43,7 +43,8 @@ type I2CDriver interface {
 var i2cDriverInitialized bool
 var i2cDriverInstance I2CDriver
 
-// SetI2cDriver should be used only for testing purpose.It makes possible to unit test embd i2c functionality
+// SetI2cDriver should be used only for testing purpose.It makes possible to unit test embd i2c functionality.
+// it overrides the i2cDriverInstance
 func SetI2cDriver(drv I2CDriver, initialized bool) {
 	i2cDriverInstance = drv
 	i2cDriverInitialized = initialized
