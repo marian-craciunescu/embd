@@ -151,6 +151,7 @@ type GPIODriver interface {
 var gpioDriverInitialized bool
 var gpioDriverInstance GPIODriver
 
+// SetGpioDriver should be used only for testing purpose.It makes possible to unit test embd gpio functionality
 func SetGpioDriver(drv GPIODriver, initialized bool) {
 	gpioDriverInstance = drv
 	gpioDriverInitialized = initialized
