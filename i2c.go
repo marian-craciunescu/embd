@@ -43,6 +43,11 @@ type I2CDriver interface {
 var i2cDriverInitialized bool
 var i2cDriverInstance I2CDriver
 
+func SetI2cDriver(drv I2CDriver, initialized bool) {
+	i2cDriverInstance = drv
+	i2cDriverInitialized = initialized
+}
+
 // InitI2C initializes the I2C driver.
 func InitI2C() error {
 	if i2cDriverInitialized {

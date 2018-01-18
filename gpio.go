@@ -151,6 +151,11 @@ type GPIODriver interface {
 var gpioDriverInitialized bool
 var gpioDriverInstance GPIODriver
 
+func SetGpioDriver(drv GPIODriver, initialized bool) {
+	gpioDriverInstance = drv
+	gpioDriverInitialized = initialized
+}
+
 // InitGPIO initializes the GPIO driver.
 func InitGPIO() error {
 	if gpioDriverInitialized {
