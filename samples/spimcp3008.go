@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/kidoman/embd"
-	_ "github.com/kidoman/embd/host/all"
+	"github.com/marian-craciunescu/embd"
+	_ "github.com/marian-craciunescu/embd/host/all"
 )
 
 const (

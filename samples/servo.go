@@ -8,11 +8,11 @@ import (
 	"os/signal"
 	"time"
 
-	"github.com/kidoman/embd"
-	"github.com/kidoman/embd/controller/pca9685"
-	"github.com/kidoman/embd/motion/servo"
+	"github.com/marian-craciunescu/embd"
+	"github.com/marian-craciunescu/embd/controller/pca9685"
+	"github.com/marian-craciunescu/embd/motion/servo"
 
-	_ "github.com/kidoman/embd/host/all"
+	_ "github.com/marian-craciunescu/embd/host/all"
 )
 
 func main() {
