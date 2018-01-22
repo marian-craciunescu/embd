@@ -8,9 +8,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/kidoman/embd"
-	"github.com/kidoman/embd/convertors/mcp3008"
-	_ "github.com/kidoman/embd/host/all"
+	"github.com/marian-craciunescu/embd"
+	"github.com/marian-craciunescu/embd/convertors/mcp3008"
+	_ "github.com/marian-craciunescu/embd/host/all"
 )
 
 const (

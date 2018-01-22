@@ -7,10 +7,10 @@ import (
 	"time"
 
 	"github.com/golang/glog"
-	"github.com/kidoman/embd"
-	"github.com/kidoman/embd/sensor/watersensor"
+	"github.com/marian-craciunescu/embd"
+	"github.com/marian-craciunescu/embd/sensor/watersensor"
 
-	_ "github.com/kidoman/embd/host/all"
+	_ "github.com/marian-craciunescu/embd/host/all"
 )
 
 func main() {
